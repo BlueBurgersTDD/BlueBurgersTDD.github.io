@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeet Squad Punishments</title>
+  </head>
+  <body>
+    <h1><center>Yeet Squad Punishments</center></h1>
+    <button type="button" id="punishment_swear">
+      Swearing/blacklisted words
+    </button>
+    <br />
+    <button type="button" id="punishment_ads">Advertising</button>
+    <br />
+    <button type="button" id="punishment_spam">Spamming</button>
+  </body>
+  <script>
+    var $ = (querySelector) => document.querySelector(querySelector);
+    $('#punishment_spam').addEventListener('click', () => {
+      document.location.href = '/yeetsquad/punishments/spam.html';
+    });
+    $('#punishment_swear').addEventListener('click', () => {
+      document.location.href = '/yeetsquad/punishments/swear.html';
+    });
+    $('#punishment_ads').addEventListener('click', () => {
+      document.location.href = '/yeetsquad/punishments/ads.html';
+    });
+  </script>
+</html>
